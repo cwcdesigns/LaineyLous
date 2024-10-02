@@ -9,16 +9,12 @@
   <link rel="stylesheet" href="styles.css">
   <style>
     /* Adjust the hero section for a smaller background image */
-    .hero {
-      position: relative;
-      height: 300px; /* Smaller height to match your screenshot */
-      background-image: url('llbackground.png');
-      background-size: contain; /* Ensure the image is not stretched */
-      background-position: center top; /* Align the image to the top */
-      background-repeat: no-repeat;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    .hero img {
+      width: 100%;
+      max-width: 1200px; /* Set the maximum width */
+      height: auto; /* Maintain aspect ratio */
+      margin: 0 auto;
+      display: block;
     }
 
     /* Optional: Style for navbar */
