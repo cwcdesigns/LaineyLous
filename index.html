@@ -36,6 +36,11 @@
     .hero-text {
       text-align: center;
     }
+
+    /* Add rounded edges to the iframe */
+    .map-container iframe {
+      border-radius: 15px; /* Adjust the radius to your liking */
+    }
   </style>
   
 </head>
@@ -58,7 +63,13 @@
       <p>213 E McMurry Blvd, Hartsville TN 37074</p>
     </section>
 <center>
-    <div style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;"><div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;"><iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/directions?origin=213+E+McMurry+Blvd,+Hartsville,+TN,+USA&destination=LaineyLou's+Kitchen&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe></div><a class="the-googlemap-enabler" href="https://kbj9qpmy.com/bp" id="get-data-for-embed-map">Broadband Providers</a><style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style></div>
+    <div class="map-container" style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+      <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/directions?origin=213+E+McMurry+Blvd,+Hartsville,+TN,+USA&destination=LaineyLou's+Kitchen&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+      </div>
+      <a class="the-googlemap-enabler" href="https://kbj9qpmy.com/bp" id="get-data-for-embed-map">Broadband Providers</a>
+      <style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
+    </div>
 </center>
     <section class="menu-section center-text">
       <h2>MENU</h2>
