@@ -8,6 +8,20 @@
   <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;600;700&family=Leckerli+One&family=Oswald&family=Poppins&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
   <style>
+    /* Global body and html styles for footer positioning */
+    html, body {
+      height: 100%;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+    }
+
+    /* Container for the main content */
+    .container {
+      flex: 1;
+      padding: 20px;
+    }
+
     /* Adjust the hero section for a smaller background image */
     .hero img {
       width: 100%;
@@ -17,7 +31,7 @@
       display: block;
     }
 
-    /* Optional: Style for navbar */
+    /* Navbar styles */
     .navbar {
       width: 100%;
       display: flex;
@@ -41,6 +55,22 @@
     .map-container iframe {
       border-radius: 15px; /* Adjust the radius to your liking */
     }
+
+    /* Divider styles */
+    .divider {
+      border: 1px solid #ddd;
+      margin: 30px 0; /* Adds space around the divider */
+    }
+
+    /* Footer styles */
+    footer {
+      background-color: black;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: relative;
+      width: 100%;
+    }
   </style>
   
 </head>
@@ -62,23 +92,26 @@
       <p>Mon-Sat 11AM - 7PM</p>
       <p>213 E McMurry Blvd, Hartsville TN 37074</p>
     </section>
-<center>
-    <div class="map-container" style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
-      <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
-        <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/directions?origin=213+E+McMurry+Blvd,+Hartsville,+TN,+USA&destination=LaineyLou's+Kitchen&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+
+    <center>
+      <!-- Map Section with Divider -->
+      <div class="map-container" style="text-decoration:none; overflow:hidden;max-width:100%;width:500px;height:500px;">
+        <div id="embedded-map-display" style="height:100%; width:100%;max-width:100%;">
+          <iframe style="height:100%;width:100%;border:0;" frameborder="0" src="https://www.google.com/maps/embed/v1/directions?origin=213+E+McMurry+Blvd,+Hartsville,+TN,+USA&destination=LaineyLou's+Kitchen&key=AIzaSyBFw0Qbyq9zTFTd-tUY6dZWTgaQzuU17R8"></iframe>
+        </div>
       </div>
-      <a class="the-googlemap-enabler" href="https://kbj9qpmy.com/bp" id="get-data-for-embed-map">Broadband Providers</a>
-      <style>#embedded-map-display img.text-marker{max-width:none!important;background:none!important;}img{max-width:none}</style>
-    </div>
-      </div>
-      </div>
-</center>
+    </center>
+
+    <!-- Divider between map and menu -->
+    <hr class="divider">
+
     <section class="menu-section center-text">
       <h2>MENU</h2>
       <p>Coming Soon</p>
     </section>
   </div>
 
+  <!-- Footer at the bottom of the page -->
   <footer>
     <p>&copy; 2024 LaineyLou's Kitchen&trade; All rights reserved.</p>
   </footer>
