@@ -71,6 +71,38 @@
       position: relative;
       width: 100%;
     }
+
+    /* Menu styling */
+    .menu-section {
+      text-align: left;
+      padding: 20px;
+    }
+
+    .menu-category h3 {
+      font-size: 1.5em;
+      margin-top: 20px;
+    }
+
+    .menu-item {
+      margin-bottom: 15px;
+    }
+
+    .item-details {
+      margin-bottom: 10px;
+    }
+
+    .title {
+      font-weight: bold;
+    }
+
+    .price {
+      color: #D92128;
+      font-weight: bold;
+    }
+    
+    hr {
+      border: 1px solid #ccc;
+    }
   </style>
   
 </head>
@@ -105,9 +137,86 @@
     <!-- Divider between map and menu -->
     <hr class="divider">
 
-    <section class="menu-section center-text">
+    <section class="menu-section">
       <h2>MENU</h2>
-      <p>Coming Soon</p>
+
+      <div class="menu-category">
+        <h3>Drinks</h3>
+        <hr>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Coke Products</p>
+            <p class="description">Coke, Coke Zero, Sprite, Dr. Pepper, Orange, Root Beer, Minute Maid Lemonade.</p>
+            <p class="price">$2.49</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">In House Brewed Tea</p>
+            <p class="description">Sweet and Unsweet.</p>
+            <p class="price">$2.49</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Bottled Water</p>
+            <p class="price">$1.29</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Sides</h3>
+        <hr>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Wings (6pc/10pc/20pc)</p>
+            <p class="description">Stingin' Honey Garlic, Buffalo, Garlic Parmesan, Sweet Teriyaki.</p>
+            <p class="price">$8.99 / $13.99 / $24.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Jumbo Onion Rings</p>
+            <p class="description">Panko breaded sweet onions fried to perfection.</p>
+            <p class="price">$5.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Crinkle Cut French Fries</p>
+            <p class="price">$2.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Fried Mozzarella Cheese Wedges</p>
+            <p class="price">$6.99</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="menu-category">
+        <h3>Fish n Seafood</h3>
+        <hr>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Shrimp Basket</p>
+            <p class="description">10pc Panko breaded shrimp served with a side of hush puppies and crinkle cut fries.</p>
+            <p class="price">$12.99</p>
+          </div>
+        </div>
+        <div class="menu-item">
+          <div class="item-details">
+            <p class="title">Cod Fillet Sandwich or Plate</p>
+            <p class="description">Scrumptious fried Cod Fillet served with JC’s Tartar sauce, lettuce, pickle, onion, hush puppies and crinkle cut fries.</p>
+            <p class="price">$12.99</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Continue adding more sections following the same format... -->
+
     </section>
   </div>
 
